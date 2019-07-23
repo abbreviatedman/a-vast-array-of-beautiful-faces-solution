@@ -39,6 +39,8 @@ const lastPerson = classroom[lastIndex];
 
 console.log(lastPerson);
 
+// console.log(classroom[classroom.length - 1]);
+
 
 console.log('# Challenge #6');
 
@@ -55,24 +57,26 @@ console.log('# Challenge #7');
 
 // Remove the last person and console out the new length of the array. It should be the same as Challenge #1, since we've added then removed one person.
 
-classroom.pop();
+const removedPerson = classroom.pop();
 console.log(classroom.length);
-
 
 console.log('# Challenge #8');
 
 // Now console out the person you just removed. You might have to change the code from a previous challenge to save that person before they're gone!
 
-console.log(lastPerson);
+// console.log(classroom[classroom.length - 1]);
+console.log(removedPerson);
 
 
 console.log('# Challenge #9');
 
 // Now remove and console out the name of the _first_ person on the list.
 
-const first = classroom[0];
-classroom.shift();
-console.log(first);
+const oldFirst = classroom.shift();
+// OR const oldFirst = classroom[0];
+// THEN classroom.shift();
+
+console.log(oldFirst);
 
 
 console.log('# Challenge #10');
